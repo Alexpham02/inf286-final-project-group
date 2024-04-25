@@ -5,64 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Holiday Auto Theatre</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="tickets.css">
 </head>
 <body>
   <div class="header">
-
     <div class="name">
-        <a href="index.html"><h1>Alex Pham</h1></a>
+        <a href="index.html"><h1>Holiday Auto Theatre</h1></a>
     </div>
-    
     <div class="nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="hobbies.html">Hobbies</a></li>
-          <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="showings.html">Showings</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="Snacks.html">Snack Bar</a></li>
+            <li><a href="contact.html">Contact us</a></li>
         </ul>
-      </div>
-
-  </div>
-
-  <section class="contact">
-    <div class="container">
-        <div class="left">
-          <h2>Movie Suggestion Form</h2>
-          <form action="/suggest_movie" method="POST">
-            <label for="title">Movie Title:</label><br>
-            <input type="text" id="title" name="title" required><br>
-            <label for="genre">Genre:</label><br>
-            <input type="text" id="genre" name="genre" required><br>
-            <label for="director">Director:</label><br>
-            <input type="text" id="director" name="director" required><br>
-            <label for="year">Year:</label><br>
-            <input type="number" id="year" name="year" required><br>
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" rows="4" required></textarea><br>
-            <input class="button" type="submit" value="Submit">
-          </form>
-        </div>
-      </div>
-      
-
-      <div class="right">
-        <h2>Contact Information</h2>
-        <p>Location: Holiday Auto Theatre
-            1816 Old Oxford Road
-            State Route 130
-            Hamilton, Ohio  45013</p>
-        <p>Email: Drive-In@Fuse.net</p>
-        <p>Phone: (513) - 929 - 2999</p>
-        <h3>Social Links</h3>
-        <ul>
-          <li><a href='https://www.facebook.com/holidayautotheatre?ref=embed_page'>Facebook</a></li>
-        </ul>
-      </div>
     </div>
-  </section>
+  </div>
+  <div class="container">
+    <h2>Please choose a date</h2>
+    <div class="form-group">
+        <label for="datepicker">Select Date:</label>
+        <input type="text" id="datepicker" class="form-control" placeholder="MM-DD-YYYY">
+    </div>
+  </div>
+  <section>
+    <div class="container">
+        <h1>Terms and Conditions </h1>
+        <label for="terms-textarea"></label>
+       <div>Speed limit is less than 10 miles an hour.
+ 
+        Display your theatre tickets on your dashboard at all times.
+         
+        No re-entry or rain checks.
+         
+        No photography or video of the movie screen is permitted.
+        </div>
 
+        <form action="#" method="post">
+            <label for="accept-checkbox">I accept the terms and conditions above</label>
+            <input type="checkbox" id="accept-checkbox" name="accept">
+            <br>
+        </form>
+    </div>
+    <form action="#" method="post">
+        <fieldset>
+        <legend>Billing information</legend>
+        <label for="fname">First Name*</label>
+        <input type="text" placeholder="First name" id="fname" name="fname"><br><br>
+        <label for="lname">Last Name*</label>
+        <input type="text" placeholder="Last name" id="lname" name="lname"><br><br>
+        <label for="creditcard">Card Number*</label>
+        <input type="text" id="creditcard" placeholder="Card number" name="creditcard"><br><br>
+        <label for="expiration">Expiration date*</label>
+        <input type="month" id="expiration" placeholder="Expiration date" name="expiration"><br><br>
+        <label for="cvv">CVV*</label>
+        <input type="text" id="cvv" placeholder="CVV" name="cvv"><br><br>
+        <label for="address">Address*</label>
+        <input type="text" placeholder="Street address" id="address" name="address"><br><br>
+        <input type="text" placeholder="City" id="city" name="city"><br><br>
+        <input type="text" placeholder="State" id="state" name="state"><br><br>
+        <input type="number" placeholder="Zip code" id="zip" name="zip" maxlength="5"><br><br>
+        <label for="email">Email*</label>
+        <input type="text" placeholder="Email address" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+  </section>
   <footer>
     <div class="container">
       <p>Holiday Auto Theatre</p>
