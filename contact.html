@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Auto Theatre</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div class="header">
+
+    <div class="name">
+        <a href="index.html"><h1>Alex Pham</h1></a>
+    </div>
+    
+    <div class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+  </div>
+
+  <section class="contact">
+    <div class="container">
+        <div class="left">
+          <h2>Movie Suggestion Form</h2>
+          <form action="/suggest_movie" method="POST">
+            <label for="title">Movie Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="genre">Genre:</label><br>
+            <input type="text" id="genre" name="genre" required><br>
+            <label for="director">Director:</label><br>
+            <input type="text" id="director" name="director" required><br>
+            <label for="year">Year:</label><br>
+            <input type="number" id="year" name="year" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" required></textarea><br>
+            <input class="button" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      
+
+      <div class="right">
+        <h2>Contact Information</h2>
+        <p>Location: Holiday Auto Theatre
+            1816 Old Oxford Road
+            State Route 130
+            Hamilton, Ohio  45013</p>
+        <p>Email: Drive-In@Fuse.net</p>
+        <p>Phone: (513) - 929 - 2999</p>
+        <h3>Social Links</h3>
+        <ul>
+          <li><a href='https://www.facebook.com/holidayautotheatre?ref=embed_page'>Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Holiday Auto Theatre</p>
+    </div>
+  </footer>
+</body>
+</html>
